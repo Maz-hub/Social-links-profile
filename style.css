@@ -5,11 +5,65 @@
   --color-white: hsl(0, 0%, 100%);
 }
 
-h1 {
-  color: var(--color-neon-green);
-  border: 2px solid red;
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2");
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v13-latin-600.woff2") format("woff2");
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2");
 }
 
-span {
-  color: var(--color-neon-green);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Arial";
+  background-color: var(--color-dark-grey);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.7;
+}
+
+h1,
+p {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+a,
+a:active {
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
 }
