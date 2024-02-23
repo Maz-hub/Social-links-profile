@@ -3,6 +3,7 @@
   --color-dark-grey: hsl(0, 0%, 12%);
   --color-neon-green: hsl(75, 94%, 57%);
   --color-white: hsl(0, 0%, 100%);
+  --color-black: #141414;
 }
 
 /* inter-regular - latin */
@@ -34,12 +35,18 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
+  height: 100%; 
   margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh;
   font-family: "Inter", "Arial";
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-black);
   font-style: normal;
   font-weight: 400;
   font-size: 0.875em;
@@ -66,4 +73,70 @@ svg {
 h1 {
   font-size: 1.5em;
   font-weight: 600;
+}
+
+
+.wrapper {
+  width: 90%;
+  max-width: 24rem;
+  background-color: var(--color-dark-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+.profile-pic {
+  border-radius: 50%;
+}
+
+.main-text {
+  margin: 1.5rem 0;
+  align-items: center;
+}
+
+.name {
+  color: var(--color-white);
+  font-size: 24px;
+}
+
+.location {
+  color: var(--color-neon-green);
+  font-weight: 600;
+}
+
+.bio {
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.social-links a {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: var(--color-grey);
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: var(--color-neon-green);
+  color: var(--color-dark-grey);
 }
