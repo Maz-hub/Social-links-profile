@@ -3,7 +3,7 @@
   --color-dark-grey: hsl(0, 0%, 12%);
   --color-neon-green: hsl(75, 94%, 57%);
   --color-white: hsl(0, 0%, 100%);
-  --color-black: #141414;
+  --color-black: hsl(0, 0%, 8%);
 }
 
 /* inter-regular - latin */
